@@ -6,7 +6,7 @@
  </head>
  <body>
    <h2><%= @team_name %></h2>
-   <% @team.each do |player| %>
+   <% @team.each do |position, player| %>
     <h3><%= player %></h3>
    <% end %>
  </body>
