@@ -12,7 +12,7 @@ class App < Sinatra::Base
     @pg = params[:pg]
     @pf = params[:pf]
     @sg = params[:sg]
-    @center = params[:center]
+    @center = params[:c]
 
     @team = params
 
