@@ -8,8 +8,11 @@ class App < Sinatra::Base
 
   post '/team' do
     @team_name = params[:name]
-    params.delete("name")
-    params.delete("submit")
+    @coach = params[:coach]
+    @pg = params[:pg]
+    @pf = params[:pf]
+    @sg = params[:sg]
+    @center = params[:center]
 
     @team = params
 
